@@ -1,0 +1,97 @@
+{
+  "project_info": {
+    "project_number": "23046944463",
+    "project_id": "security-report-d6aef",
+    "storage_bucket": "security-report-d6aef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:23046944463:android:377fcef6adb3506d10e9ba",
+        "android_client_info": {
+          "package_name": "com.example.kn_security_report"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "23046944463-6urni82rt1ef2p866udo9uikjfujmted.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVqayU5UrCrZNqtjfl0FqdX3G7J_DgG08"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "23046944463-6urni82rt1ef2p866udo9uikjfujmted.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:23046944463:android:bfa4857b4ab66d9b10e9ba",
+        "android_client_info": {
+          "package_name": "com.example.securityreport"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "23046944463-6urni82rt1ef2p866udo9uikjfujmted.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVqayU5UrCrZNqtjfl0FqdX3G7J_DgG08"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "23046944463-6urni82rt1ef2p866udo9uikjfujmted.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:23046944463:android:86b995552df986da10e9ba",
+        "android_client_info": {
+          "package_name": "com.iworldoftech.recyclerview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "23046944463-6urni82rt1ef2p866udo9uikjfujmted.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVqayU5UrCrZNqtjfl0FqdX3G7J_DgG08"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "23046944463-6urni82rt1ef2p866udo9uikjfujmted.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

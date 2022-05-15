@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/layout-w1240dp/activity_my_login.xml" value="0.13828125" />
+        <entry key="app/src/main/res/layout-w936dp/activity_my_login.xml" value="0.18599258172707478" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_login_checker.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.19357651420261549" />
+        <entry key="app/src/main/res/layout/activity_my_login.xml" value="0.36521652885105305" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_text_report_viewer.xml" value="0.16032608695652173" />
+        <entry key="app/src/main/res/layout/alert_viewer.xml" value="0.5145348837209303" />
+        <entry key="app/src/main/res/layout/content_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_first.xml" value="0.16032608695652173" />
+        <entry key="app/src/main/res/layout/fragment_picture_pop_up.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_second.xml" value="0.16032608695652173" />
+        <entry key="app/src/main/res/layout/picture_viewer.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/text_report_viewer.xml" value="0.16032608695652173" />
+        <entry key="app/src/main/res/layout/video_viewer.xml" value="0.16032608695652173" />
+        <entry key="app/src/main/res/layout/wordlist_item.xml" value="0.16032608695652173" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
