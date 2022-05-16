@@ -4,12 +4,14 @@ import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.MediaController;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.VideoView;
@@ -107,14 +109,19 @@ public class VideoReportAdapter extends
             View view = inflater.inflate(R.layout.video_viewer, null);
             final TextView edit = (TextView) view.findViewById(R.id.viewTextContent);
             final VideoView vd = (VideoView) view.findViewById(R.id.vdView);
+            MediaController controls = new MediaController(wordItemView.getContext());
 
-            final long ONE_MEGABYTE = 1024 * 1024;
-            pathReference.getBytes(ONE_MEGABYTE).addOnSuccessListener(new OnSuccessListener<byte[]>() {
+
+            pathReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                 @Override
-                public void onSuccess(byte[] bytes) {
+                public void onSuccess(Uri downloadUrl) {
 
-                    Bitmap bmp = BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
-                    vd.set
+                    vd.setVideoURI(downloadUrl);
+                    vd.seekTo(1);
+                    vd.start();
+                    vd.setMediaController(controls);
+                    controls.show();
+
                 }
             }).addOnFailureListener(new OnFailureListener() {
                 @Override
@@ -127,7 +134,7 @@ public class VideoReportAdapter extends
                 @Override
                 public void onSuccess(StorageMetadata storageMetadata) {
                     // Metadata now contains the metadata for 'images/forest.jpg'
-                    edit.setText(storageMetadata.getCustomMetadata("pictureDescription"));
+                    edit.setText(storageMetadata.getCustomMetadata("videoDescription"));
                 }
             }).addOnFailureListener(new OnFailureListener() {
                 @Override
@@ -136,9 +143,8 @@ public class VideoReportAdapter extends
                 }
             });
 
-
             AlertDialog.Builder builder = new AlertDialog.Builder(wordItemView.getContext());
-            builder.setMessage("MMM");
+            builder.setMessage("Video Report");
             builder.setIcon(android.R.drawable.ic_dialog_alert);
             builder.setView(view);
             builder.setPositiveButton("OK", (dialog, which) -> {} );

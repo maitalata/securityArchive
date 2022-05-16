@@ -23,4 +23,9 @@ public class Home extends AppCompatActivity {
         Intent intent = new Intent(this, TextReportViewer.class);
         startActivity(intent);
     }
+
+    public void openVideoReports(View view){
+        Intent intent = new Intent(this, VideoReportViewer.class);
+        startActivity(intent);
+    }
 }

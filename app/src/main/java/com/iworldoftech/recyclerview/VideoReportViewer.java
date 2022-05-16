@@ -40,7 +40,7 @@ public class VideoReportViewer extends AppCompatActivity {
     private ActivityMainBinding binding;
 
     private RecyclerView mRecyclerView;
-    private WordListAdapter mAdapter;
+    private VideoReportAdapter mAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -106,7 +106,7 @@ public class VideoReportViewer extends AppCompatActivity {
         // Get a handle to the RecyclerView.
         mRecyclerView = findViewById(R.id.recyclerview);
 // Create an adapter and supply the data to be displayed.
-        mAdapter = new WordListAdapter(this, videoList);
+        mAdapter = new VideoReportAdapter(this, videoList);
 // Connect the adapter with the RecyclerView.
         mRecyclerView.setAdapter(mAdapter);
 // Give the RecyclerView a default layout manager.
