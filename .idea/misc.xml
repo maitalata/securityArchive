@@ -11,6 +11,7 @@
         <entry key="app/src/main/res/layout/activity_my_login.xml" value="0.36521652885105305" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_text_report_viewer.xml" value="0.16032608695652173" />
+        <entry key="app/src/main/res/layout/activity_video_report_viewer.xml" value="0.10714285714285714" />
         <entry key="app/src/main/res/layout/alert_viewer.xml" value="0.5145348837209303" />
         <entry key="app/src/main/res/layout/content_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_first.xml" value="0.16032608695652173" />

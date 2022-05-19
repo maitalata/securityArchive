@@ -109,26 +109,10 @@ public class VideoReportAdapter extends
             View view = inflater.inflate(R.layout.video_viewer, null);
             final TextView edit = (TextView) view.findViewById(R.id.viewTextContent);
             final VideoView vd = (VideoView) view.findViewById(R.id.vdView);
-            MediaController controls = new MediaController(wordItemView.getContext());
 
 
-            pathReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
-                @Override
-                public void onSuccess(Uri downloadUrl) {
 
-                    vd.setVideoURI(downloadUrl);
-                    vd.seekTo(1);
-                    vd.start();
-                    vd.setMediaController(controls);
-                    controls.show();
 
-                }
-            }).addOnFailureListener(new OnFailureListener() {
-                @Override
-                public void onFailure(@NonNull Exception exception) {
-
-                }
-            });
 
             pathReference.getMetadata().addOnSuccessListener(new OnSuccessListener<StorageMetadata>() {
                 @Override
@@ -149,6 +133,27 @@ public class VideoReportAdapter extends
             builder.setView(view);
             builder.setPositiveButton("OK", (dialog, which) -> {} );
             builder.setCancelable(false);
+
+            pathReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                @Override
+                public void onSuccess(Uri downloadUrl) {
+
+                    vd.setVideoURI(downloadUrl);
+                    MediaController controls = new MediaController(builder.getContext());
+                    controls.setAnchorView(vd);
+                    vd.setMediaController(controls);
+                    vd.seekTo(1);
+                    vd.start();
+                    controls.show();
+                }
+            }).addOnFailureListener(new OnFailureListener() {
+                @Override
+                public void onFailure(@NonNull Exception exception) {
+
+                }
+            });
+
+
             builder.create().show();
 
         }

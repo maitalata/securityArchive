@@ -62,21 +62,7 @@ public class TextReportViewer extends AppCompatActivity {
         appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
 
-        binding.fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-//                int wordListSize = mWordList.size();
-//                // Add a new word to the wordList.
-//                mWordList.addLast("+ Word " + wordListSize);
-//                // Notify the adapter that the data has changed.
-//                mRecyclerView.getAdapter().notifyItemInserted(wordListSize);
-//                // Scroll to the bottom.
-//                mRecyclerView.smoothScrollToPosition(wordListSize);
 
-                new PicturePopUp().show(
-                        getSupportFragmentManager(), PicturePopUp.TAG);
-            }
-        });
 
 //        for (int i = 0; i < 20; i++) {
 //            mWordList.addLast("Word " + i);
